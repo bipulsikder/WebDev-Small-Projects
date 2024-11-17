@@ -1,0 +1,54 @@
+Hello Developers, this is a simple web app that displays real-time weather details for any city using the OpenWeatherMap API.
+
+*** Features
+- Search weather by city name.
+- Displays:
+  - Temperature (°C)
+  - Humidity (%)
+  - Wind Speed (Km/h)
+  - City Name
+- Supports search via button or Enter key.
+
+
+## API Integration
+The app fetches weather data from the **OpenWeatherMap API** using the endpoint:
+
+```
+https://api.openweathermap.org/data/2.5/weather?units=metric&q=
+```
+
+### Steps to Fetch API Data
+1. Construct the URL with the city name and API key:
+   ```
+   const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+   const apikey = "YOUR_API_KEY";
+   const response = await fetch(`${apiurl}${city}&appid=${apikey}`);
+   ```
+2. Parse the JSON response to get weather details:
+   ```
+   const data = await response.json();
+   ```
+
+---
+
+## How to Use
+1. Enter a city name in the search box.
+2. Press Enter or click the search button.
+3. View the weather details displayed on the screen.
+
+---
+
+## Setup
+1. Clone this repository.
+2. Add your **OpenWeatherMap API key** to the script:
+   ```
+   const apikey = "YOUR_API_KEY";
+   ```
+3. Open `index.html` in your browser.
+
+---
+
+## Technologies Used
+- **HTML5** for structure
+- **CSS3** for styling
+- **JavaScript** for API calls and functionality
