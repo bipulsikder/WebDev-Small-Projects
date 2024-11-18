@@ -106,7 +106,7 @@ button:hover {
 }
 
 .list-container li input {
-  flex: 1; /* Allow the input to take up available space */
+  flex: 1; 
   max-width: 70%; /* Prevent it from overlapping buttons */
   border: 1px solid #ccc;
   padding: 5px;
