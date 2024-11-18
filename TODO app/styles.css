@@ -92,7 +92,7 @@ button:hover {
   font-size: 16px;
   color: #333;
   transition: transform 0.2s ease, background 0.3s ease;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden; 
 }
 
 .list-container li:hover {
