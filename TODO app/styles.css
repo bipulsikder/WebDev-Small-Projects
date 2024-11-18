@@ -107,7 +107,7 @@ button:hover {
 
 .list-container li input {
   flex: 1; 
-  max-width: 70%; /* Prevent it from overlapping buttons */
+  max-width: 70%;
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 5px;
@@ -141,5 +141,5 @@ button:hover {
 }
 
 .list-container {
-  padding: 0; /* Remove padding to align items properly */
+  padding: 0;
 }
