@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #2ab484, #3384c2);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px 30px 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 330px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #2ab484;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #3384c2;
+}
+
+.list-container {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.list-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: transform 0.2s ease, background 0.3s ease;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.list-container li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+.list-container li span {
+  flex: 1;
+  word-break: break-word; /* Break long text */
+}
+
+.list-container li input {
+  flex: 1; /* Allow the input to take up available space */
+  max-width: 70%; /* Prevent it from overlapping buttons */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.list-container li button {
+  margin-left: 10px;
+  background: #ff6b6b;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.list-container li button:hover {
+  background: #ff4a4a;
+}
+
+.list-container li .edit-button {
+  background: #2ab484;
+}
+
+.list-container li .edit-button:hover {
+  background: #3384c2;
+}
+
+.list-container {
+  padding: 0; /* Remove padding to align items properly */
+}
