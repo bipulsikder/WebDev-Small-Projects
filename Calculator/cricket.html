@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cricket Game</h1>
+
+  <script>
+    // Declare variables once globally
+    let randomNumber, computerChoice, resultMsg;
+
+    // Function to generate the computer's choice
+    function generateComputerChoice() {
+      randomNumber = Math.random() * 3;
+      if (randomNumber > 0 && randomNumber <= 1) {
+        computerChoice = 'Bat';
+      } else if (randomNumber > 1 && randomNumber <= 2) {
+        computerChoice = 'Ball';
+      } else {
+        computerChoice = 'Stump';
+      }
+    }
+
+    // Function for "Bat" button click
+    function chooseBat() {
+      generateComputerChoice();
+      if (computerChoice === 'Ball') {
+        resultMsg = 'User Won';
+      } else if (computerChoice === 'Bat') {
+        resultMsg = `It's a tie`;
+      } else {
+        resultMsg = 'Computer has won';
+      }
+      alert(`You have chosen Bat, and Computer has chosen ${computerChoice}. ${resultMsg}`);
+    }
+
+    // Function for "Ball" button click
+    function chooseBall() {
+      generateComputerChoice();
+      if (computerChoice === 'Ball') {
+        resultMsg = `It's a tie`;
+      } else if (computerChoice === 'Bat') {
+        resultMsg = 'Computer has won';
+      } else {
+        resultMsg = 'User Won';
+      }
+      alert(`You have chosen Ball, and Computer has chosen ${computerChoice}. ${resultMsg}`);
+    }
+
+    // Function for "Stump" button click
+    function chooseStump() {
+      generateComputerChoice();
+      if (computerChoice === 'Stump') {
+        resultMsg = `It's a tie`;
+      } else if (computerChoice === 'Ball') {
+        resultMsg = 'Computer has won';
+      } else {
+        resultMsg = 'User Won';
+      }
+      alert(`You have chosen Stump, and Computer has chosen ${computerChoice}. ${resultMsg}`);
+    }
+  </script>
+
+  <!-- Buttons to trigger functions -->
+  <button onclick="chooseBat()">Bat</button>
+  <button onclick="chooseBall()">Ball</button>
+  <button onclick="chooseStump()">Stump</button>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bipul ka Calculator</title>
+  <style>
+    body{
+      background-color: rgb(40, 46, 52);
+      display: flex;
+      justify-content: center;
+      
+    }
+    #calculator{
+      border: 1px solid whitesmoke;
+      width: 400px;
+      border-radius: 5px;
+
+      background-color: rgba(35, 134, 214, 0.853);
+    }
+    #input-display{
+      width: 80%;
+      margin: 30px;
+      padding: 15px 0px;
+      display: flex;
+      justify-content: center;
+      font-size: large;
+      
+    }
+    .buttons{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+    }
+    .buttons button{
+      margin: 14px;
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      border-color: white;
+      font-size: large;
+
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="input-display" >
+    <div class="buttons">
+      <button onclick="dis = '';
+      document.querySelector('#input-display').value=dis">C</button>
+
+      <button onclick="dis = dis +'1';
+      document.querySelector('#input-display').value=dis">1</button>
+      <!-- jab bhi koyi 1 button ko click kare dis pe 1 add hojana chayye, next jo display hai 'input-display' waha ka value jo latest variable hai wo hojana chayye  -->
+
+      <button onclick="dis = dis +'2';
+      document.querySelector('#input-display').value=dis">2</button>
+
+      <button onclick="dis = dis +'+';
+      document.querySelector('#input-display').value=dis">+</button>
+
+      <button onclick="dis = dis +'3';
+      document.querySelector('#input-display').value=dis">3</button>
+
+      <button onclick="dis = dis +'4';
+      document.querySelector('#input-display').value=dis">4</button>
+
+      <button onclick="dis = dis +'-';
+      document.querySelector('#input-display').value=dis">-</button>
+
+      <button onclick="dis = dis +'5';
+      document.querySelector('#input-display').value=dis">5</button>
+
+      <button onclick="dis = dis +'6';
+      document.querySelector('#input-display').value=dis">6</button>
+
+      <button onclick="dis = dis +'*';
+      document.querySelector('#input-display').value=dis">*</button>
+
+      <button onclick="dis = dis +'7';
+      document.querySelector('#input-display').value=dis">7</button>
+
+      <button onclick="dis = dis +'8';
+      document.querySelector('#input-display').value=dis">8</button>
+
+      <button onclick="dis = dis +'/';
+      document.querySelector('#input-display').value=dis">/</button>
+
+      <button onclick="dis = dis +'9';
+      document.querySelector('#input-display').value=dis">9</button>
+
+      <button onclick="dis = dis +'0';
+      document.querySelector('#input-display').value=dis">0</button>
+
+      <button onclick="dis = eval(dis);
+      document.querySelector('#input-display').value=dis">=</button>
+
+    </div>
+
+  </div>
+  <script>
+    let dis = '';
+    document.querySelector('#input-display').value=dis;
+  </script>
+</body>
+</html>
