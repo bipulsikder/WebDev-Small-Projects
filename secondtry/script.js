@@ -3,17 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set } from "firebase/database"; // Import Realtime Database SDK
 import { getAnalytics } from "firebase/analytics";
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCYRI_3kZVHzfmjjBmvny11O2ANEAaMdpg",
-  authDomain: "pilotonboarding-db76d.firebaseapp.com",
-  databaseURL: "https://pilotonboarding-db76d-default-rtdb.firebaseio.com",
-  projectId: "pilotonboarding-db76d",
-  storageBucket: "pilotonboarding-db76d.firebasestorage.app",
-  messagingSenderId: "154839774631",
-  appId: "1:154839774631:web:e3197d1c82e1a3a0fcb282",
-  measurementId: "G-C36B5JB518"
-};
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
